@@ -34,13 +34,8 @@ a, a:focus, a:active {
 }
 
 /*--search box styling--*/
-#search-form {
-	width: 460px;
-	position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
-#search {
+
+#searchText {
 	background: #fff;
 	border: 2px solid #e5e5e5;
 	color: #7f7f7f;
@@ -48,8 +43,7 @@ a, a:focus, a:active {
 	width: 460px;
 	padding: 8px 10px;
 	border-radius: 3px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 15px auto;
 }
 
 
@@ -57,25 +51,29 @@ a, a:focus, a:active {
 
 /*--gallery styling--*/
 img.gallery {
-      float: left;
       display: inline-block;
       width: 200px;
       height: 200px;
       padding: 0;
-      margin: 0;
+      padding-right: 60px;
+      padding-bottom: 60px;
+      margin: auto;
     }
     
+ul {
+    padding: 0;
+}
+    
 ul#interactiveGallery li {
-        width: 260px;
-        height: 260px;
+        max-width: 245px;
+        max-height: 245px;
         display: inline-block;
         margin: 0;
         padding: 0;
-        margin-left: -20px;
-    }
+            }
     
-ul#interactiveGallery li:nth-of-type(4n + 4) {
-        width: 200px;
+ul#interactiveGallery li:nth-of-type(4n + 4) img.gallery {
+        padding-right: 0;
     }
 
 #project, ul#interactiveGallery {
