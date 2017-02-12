@@ -14,11 +14,5 @@ $("#searchText").keyup(function(){
         $(this).show();
     })
     
-    $("ul li a img").each(function(){
-        if (!contains($(this).attr("alt").toLowerCase(), searchText))
-        $(this).parent("a").parent("li").hide();
-        else
-        $(this).show();
-    })
     
 })
